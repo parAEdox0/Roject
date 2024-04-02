@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.page1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    background: url(../images/download.png);
+    background-color: #0E1525;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.loginSignUp {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
+p {
+    font-size: 22px;
+    width: 40vw;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 19px;
+    padding: 8px 16px;
+    border-radius: 13px;
+    border: none;
+}
+
+#login-btn {
+    color: white;
+    background-color: #0053a6;
+}
+
+#register-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid grey ;
+}
