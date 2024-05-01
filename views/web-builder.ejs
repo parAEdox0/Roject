@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Editor</title>
+    <link rel="stylesheet" href="../stylesheets/web-builder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="codemirror/lib/codemirror.css">
+    <script src="codemirror/lib/codemirror.js"></script>
+    <script src="codemirror/mode/xml/xml.js"></script>
+    <script src="codemirror/mode/css/css.js"></script>
+    <script src="codemirror/mode/javascript/javascript.js"></script>
+    <link rel="stylesheet" href="codemirror/theme/dracula.css">
+    <link rel="stylesheet" href="../codemirror/theme/material-darker.css">
+    <script src="codemirror/addon/edit/closebrackets.js"></script>
+    <script src="codemirror/addon/edit/closetag.js"></script>
+    <script src="codemirror/addon/hint/show-hint.js"></script>
+    <script src="codemirror/addon/hint/html-hint.js"></script>
+    <script src="codemirror/addon/hint/css-hint.js"></script>
+    <script src="codemirror/addon/hint/javascript-hint.js"></script>
+    <link rel="stylesheet" href="codemirror/addon/hint/show-hint.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="leftElements html">
+                <p>
+                    <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="" class="iHtml">
+                    HTML
+                </p>
+                <textarea id="html-code" cols="30" rows="10"></textarea>
+            </div>
+            <div class="leftElements css">
+                <p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png"
+                        alt="" class="iHtml">
+                    CSS
+                </p>
+                <textarea id="css-code" cols="30" rows="10"></textarea>
+            </div>
+            <div class="leftElements js">
+                <p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt=""
+                        class="iHtml">
+                    JS
+                </p>
+                <textarea id="js-code" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="right">
+            <div class="rightText">
+                <i class="fa-solid fa-play"></i>
+                <p>Output</p>
+            </div>
+            <div class="output">
+
+            </div>
+        </div>
+    </div>
+    <script src="../javascripts/web-builder.js"></script>
+</body>
+
+</html>

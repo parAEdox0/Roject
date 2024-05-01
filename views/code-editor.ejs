@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/code-editor.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css">
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/mode/xml/xml.js"></script>
+    <script src="../codemirror/mode/clike/clike.js"></script>
+    <script src="../codemirror/mode/python/python.js"></script>
+    <link rel="stylesheet" href="../codemirror/theme/darcula.css">
+    <link rel="stylesheet" href="../codemirror/theme/duotone-dark.css">
+    <link rel="stylesheet" href="../codemirror/theme/material-darker.css">
+    <script src="../codemirror/addon/edit/closebrackets.js"></script>
+    <script src="../codemirror/addon/edit/closetag.js"></script>
+    <script src="../codemirror/addon/hint/show-hint.js"></script>
+    <link rel="stylesheet" href="../codemirror/addon/hint/show-hint.css">
+    <script src="../codemirror/addon/hint/javascript-hint.js"></script>
+    <title>Code-Editor</title>
+</head>
+
+<body class="w-full h-screen">
+    <div class="main flex">
+        <div class="left w-[60vw] flex flex-col gap-2 bg-[#292D3E] h-[100vh] p-5">
+            <div class="selector h-[10vh] flex justify-between items-center p-4 bg-[#00000057] rounded-lg">
+                <select name="languages" id="language-select"
+                    class="p-3 rounded-lg cursor-pointer focus:outline-none text-center"
+                    style="-webkit-appearance: none; -moz-appearance: none; appearance: none;">
+                    <option value="cpp">C++</option>
+                    <option value="java">Java</option>
+                    <option value="py">Python</option>
+                </select>
+                <h2 class="text-white text-2xl font-extrabold">CLOUD-CODE-CRAFT</h2>
+                <div class="flex justify-center items-center gap-3">
+                    <p class="text-white uppercase font-extrabold text-xl">Run</p>
+                    <i
+                        class="run fa-solid fa-play text-white active:bg-[tomato] hover:bg-green-900 bg-green-600 cursor-pointer p-3 rounded-md"></i>
+                </div>
+            </div>
+            <div class="editor h-[85vh] rounded-md"></div>
+        </div>
+        <div class="right w-[40vw] bg-[#1B1E2B] h-[100vh]">
+            <div class="uH h-[50vh] flex flex-col gap-2 justify-center items-center ">
+                <h2 class="text-white flex text-start font-bold text-xl">INPUT</h2>
+                <textarea
+                    class="input h-[80%] w-[80%] bg-[#292D3E] rounded-lg focus:outline-none text-white p-5"></textarea>
+            </div>
+            <div class="lH h-[50vh] flex flex-col gap-2 justify-start items-center ">
+                <h2 class="text-white flex text-start font-bold text-xl">OUTPUT</h2>
+                <textarea
+                    class="output h-[80%] w-[80%] bg-[#292D3E] rounded-lg focus:outline-none text-white p-5 max-h-[80%]"></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="../javascripts/code-editor.js"></script>
+</body>
+
+</html>

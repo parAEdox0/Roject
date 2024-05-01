@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    background-color: #292D3E;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+}
+
+.left {
+    height: 95%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.leftElements {
+    height: 28%;
+    width: 94%;
+}
+
+.left p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 5px 5px;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    color: white;
+    height: 100%;
+    width: 100%;
+}
+
+textarea:active {
+    border: none;
+    outline: none;
+}
+
+.right {
+    height: 100%;
+    width: 50%;
+}
+
+.iHtml {
+    padding-left: 7px;
+    height: 15px;
+}
+
+.rightText {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+}
+
+.right p {
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.output{
+    overflow: auto  ;
+    font-family: serif;
+    background-color: white;
+    color: black;
+    height: 89vh;
+}
+
+.right i{
+    background-color: #16A34A;
+    padding: 6px 8px;
+    border-radius: 3px;
+}
+
+.CodeMirror {
+    font-size: 17px;
+}
